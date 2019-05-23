@@ -1,0 +1,11 @@
+﻿.body-content {
+    padding-top: 1em;
+}
+
+.card, .card-sizer {
+    width: 360px;
+}
+
+.card {
+    margin: 3px 0;
+}

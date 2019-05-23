@@ -1,0 +1,4 @@
+﻿insert Notes(NoteTitle, NoteContent)
+values
+(N'Chí Phèo', N'Những câu nói của Chí Phèo khép lại cuộc đời đen tối của hắn nhưng dội lai những năm tháng hắn đã sống, gợi lại những kí ức đau thương và cả nỗi ngọt ngào mà mới hôm qua, hôm kia thôi hắn còn được hưởng nhưng hôm nay đã tuột khỏi tầm tay.'),
+(N'Lão Hạc', N'Truyện Lão Hạc sở dĩ làm cảm động lòng người, vì qua ngôn từ như thế nhà văn đã hàm ẩn sự cảm thông và tình yêu thương da diết đối với những thân phận đắng cay, cơ cực, tủi hờn. Đó là những thân phận trong bi kịch của nhân sinh muôn đời, như lời của nhân vật trong truyện: "Ấy! Sự đời lại cứ thường như vậy đấy!".')

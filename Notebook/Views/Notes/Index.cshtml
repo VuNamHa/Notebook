@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Notebook.Models.Note>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<p>
+    <a href="/notes/create" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Create new note</a>
+</p>
+<div class="card-masonry">
+    <div class="card-sizer"></div>
+    @foreach (var item in Model)
+    {
+        string NoteContentShorter;
+        if (item.NoteContent.Length > 500)
+        {
+            NoteContentShorter = item.NoteContent.Substring(0, 500) + "...";
+        } else
+        {
+            NoteContentShorter = item.NoteContent;
+        }
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">@Html.ActionLink(item.NoteTitle, "Details", new { id = item.NoteID })</h5>
+                <p class="card-text">@NoteContentShorter</p>
+                <div class="btn-group btn-group-sm" role="group">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.NoteID }, new { @class = "btn btn-primary" })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.NoteID }, new { @class = "btn btn-danger" })
+                </div>
+            </div>
+        </div>
+    }
+</div>

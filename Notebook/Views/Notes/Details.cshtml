@@ -1,0 +1,18 @@
+﻿@model Notebook.Models.Note
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>@Html.DisplayFor(model => model.NoteTitle)</h4>
+    <p>@Html.DisplayFor(model => model.NoteContent)</p>
+    <p>Created At: @Html.DisplayFor(model => model.CreatedAt)</p>
+    <p>Edited At: @Html.DisplayFor(model => model.EditedAt)</p>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NoteID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
